@@ -4,13 +4,18 @@
         <meta charset="utf-8">
         <title>Dámské běžecké boty</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+<!--         <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+ -->    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&amp;subset=latin-ext" rel="stylesheet">
     </head>
     <body>
 
+        
+        <div class="zbozi"> <!-- to je jeden velký obalovač / jakoby základ, 
+            pozadí a do toho pak vnořuji vše ostatní viz zde logo, vizual, slogan atd. 
+            a tento končí až úplně na konci a do toho je vnořeno to ostatní-->
 
-        <div class="zbozi">
-
-            <div class="vizual">
+            <div class="vizual"> <!-- pak vznikl další obalovač na VIZUAL, ale je 
+                vnořen ve zboží atd... -->
 
                 <div class="logo">
                     <img src="images/nike.svg" alt="logo Nike" width="65" height="24">
@@ -36,7 +41,7 @@
 
             <div class="detaily">
 
-                <h1 class="nazev">Nike Air Zoom Pegasus 33</h1>
+                <h1 class="nazev">NIKE AIR ZOOM PEGASUS 33</h1>
 
                 <p class="produkt">Dámská běžecká bota</p>
 
@@ -46,16 +51,27 @@
 
                 <h2 class="parametr">Velikost</h2>
 
-                <ul class="velikosti">
+                <ul class="velikosti"> <!-- ul = seznam (unordered list) a každá 
+                    řádka seznamu je označena li -->
+                  
                     <li>35</li>
                     <li>36</li>
                     <li>37</li>
-                    <li class="vybrana">38</li>
+                    <li class="vybrana">38</li> <!-- abych mohla vyčlenit jen jeden prvek a dál ho nastylovat / jinak, než ty ostatní / odlišit jej musím 
+                        ho vyjmout z té skupiny ve které se nachází a "osamostatnit" ho - do třídy-->
                     <li>39</li>
-                    <li>40</li>
+                    <li>40</li> 
+
+                   <!--  <li><a href="#">35</a></li>
+                    <li><a href="#">36</a></li>
+                    <li><a href="#">37</a></li>
+                    <li class="vybrana">38</li>
+
+                    <li><a href="#">39</a></li>
+                    <li><a href="#">40</a></li> zakomentováno, protorže to nepotřebuji dělat formou odkazů tedy Acek-->
                 </ul>
 
-                <div class="akce">
+                <div class="akce"> <!-- příklad na rodina / rodič : class akce je RODIČ -->
                     <a class="tlacitko" href="#">Do košíku</a>
                 </div>
 
